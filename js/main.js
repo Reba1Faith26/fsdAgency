@@ -7,6 +7,12 @@ function landing(){
             }
         ,500);
 
+        $(".computer-navigation-bar").animate(
+            {
+                marginTop : '10px'
+            }
+        ,500);
+
         $(".multimedia-caption").animate({
             marginLeft : '0px'
         },1700)

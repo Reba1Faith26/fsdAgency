@@ -1,14 +1,29 @@
+/*coding for the navigation bar for bigger devices start here*/
+.computer-li{
+    margin-left:20px;
+}
 /* coding for the landing page start here*/
 .landing-page{
     background-color:rgb(9, 10, 47) !important;
     display:none;
 }
-.welcome-caption{
-    margin-top:-90px;
+.welcome-caption,.computer-navigation-bar{
+    margin-top:-100px;
 }
 .multimedia-caption,.button-wrapper-one{
     margin-left:-700px;
     margin-top:0px;
+}
+@media screen and (min-width:400px) and (max-width:1500px){
+    .multimedia-caption{
+        margin-left : -2000px;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1500px){
+    .card{
+        height:270px;
+    }
 }
 .services-wrapper,.button-wrapper-two{
     margin-right:-1700px;

@@ -11,7 +11,38 @@
 </head>
 <body onload="landing()" style="background-color:rgb(9, 10, 47)">
     
-    <div class="container-fluid landing-page text-center text-white font-weight-bold d-block d-sm-block d-md-none d-lg-none d-xl-none">
+    <div class="landing-page text-center text-white font-weight-bold d-block d-sm-block d-md-block d-lg-block d-xl-block">
+        
+        <!--coding for the navigation bar for the bigger devices-->
+    <div class="container-fluid computer-navigation-bar d-none d-sm-none d-md-block d-lg-block" style="height:40px;">
+        <div class="container">
+            <ul class="computer-li text-right">
+            <li class="computer-li d-inline-block">
+                <a href="#" class="h6 font-weight-bold">
+                    Home
+                </a>
+            </li>
+            <li class="computer-li d-inline-block">
+                <a href="#" class="h6 font-weight-bold">
+                    About Us
+                </a>
+            </li>
+            <li class="computer-li d-inline-block">
+                <a href="#" class="h6 font-weight-bold">
+                    Contact Us
+                </a>
+            </li>
+            <li class="computer-li d-inline-block">
+                <a href="#" class="h6 font-weight-bold">
+                    Potfolio
+                </a>
+            </li>
+        </ul>
+        </div>
+    </div>
+    <!--coding for the navation bar for the bigger devices ended here-->
+
+
         <p class="h4 card-text welcome-caption">
             Welcome To <br> Faith Seasons Design
         </p>
@@ -23,30 +54,30 @@
         <br>
         <br>
     </div>
-    <div class="container-fluid services-wrapper text-center font-weight-bold d-md-none d-lg-none d-xl-none">
-        <div class="container-fluid">
+    <div class="container-fluid services-wrapper text-center font-weight-bold d-md-block d-lg-block d-xl-block">
+        <div class="">
             <br>
-            <p class="h4 font-weight-bold card-text text-left font-weight-bold">
+            <p class="h4 font-weight-bold card-text text-center font-weight-bold">
                 What Makes FSD different?
             </p><br>
-            <p class="text-left card-text h6">
-                <span class="lead font-weight-bold"><i>Collaboration</i></span> <br>
+            <p class="text-center card-text h6">
+                <span class="lead font-weight-bold text-center"><i>Collaboration</i></span> <br>
                 FSD collaborate with other talented freelancing 
                 indivisuals to  
                 deliver services that will help your business 
                 run smoothly and reach greater heights
             </p>
-            <p class="h6 text-left card-text">
+            <p class="h6 text-center card-text">
                 <a href="#" class="text-mute" style="color:black !important">
                     Read More <i class="fa fa-arrow-right"></i>
                 </a>
             </p>
             <br>
-            <p class="h4 font-weight-bold card-text text-left font-weight-bold">
+            <p class="h4 font-weight-bold card-text text-center font-weight-bold">
                 What kind of services are we offering?
             </p>
             <div class="row">
-                <div class="col-12"> <br>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4"> <br>
                     <div class="card" style="border-bottom:solid 8px rgb(9, 10, 47);">
                         <div class="card-body">
                             <p class="card-text h4 font-weight-bold">
@@ -64,7 +95,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12"> <br>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4"> <br>
                     <div class="card" style="border-bottom:solid 8px rgb(9, 10, 47);">
                         <div class="card-body">
                             <p class="card-text h4 font-weight-bold">
@@ -81,7 +112,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12"> <br>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4"> <br>
                     <div class="card" style="border-bottom:solid 8px rgb(9, 10, 47);">
                         <div class="card-body">
                             <p class="card-text h4 font-weight-bold">
@@ -90,8 +121,7 @@
                             </p>
                             <p class="card-text h6">
                                 every bussiness need social media presence 
-                                and marketing,we have freelancers 
-                                who are available to help your business succeed on that
+                                ,we got you on that
                             </p>
                             <a href="#" class="text-mute" style="color:black !important">
                                 Read More <i class="fa fa-arrow-right"></i>
@@ -102,7 +132,7 @@
             </div><br>
         </div>
     </div>
-    <div class="container-fluid text-center font-weight-bold text-white d-md-none" style="background-color:rgb(9, 10, 47);">
+    <div class="container-fluid text-center font-weight-bold text-white" style="background-color:rgb(9, 10, 47);">
         <div class="card-body">
             <p class="h5">
                 If you would like to get in touch with us, 
@@ -114,7 +144,7 @@
         </div>
     </div>
     
-    <div class="container-fluid footer d-md-none text-center" style="background-color:white">
+    <div class="container-fluid footer  text-center" style="background-color:white">
         <div class="card-body font-weight-bold">
             &copy;2020 Faith Seasons Design <br> All Rights Reserved
             <br>
