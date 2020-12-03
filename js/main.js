@@ -1,9 +1,23 @@
 function landing(){
+    //coding for the menu button
+    $(".menu-button").click(function(){
+        $(".phone-navigation-list").slideToggle(500);
+    })
+    //coding for the meu button ended here
+
+
     $(".landing-page").slideDown(300,function(){
         
         $(".welcome-caption").animate(
             {
-                marginTop : '50px'
+                marginTop : '45px'
+            }
+        ,500);
+
+
+        $(".phones-navigation-bar").animate(
+            {
+                marginTop : '0px'
             }
         ,500);
 
