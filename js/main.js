@@ -42,6 +42,10 @@ function landing(){
         $(".button-wrapper-two").animate({
             marginRight : '0px'
         },1700)
+
+        $(".different-wrapper").animate({
+            marginLeft : '0px'
+        },1700)
         //happens when the services button is basically clicked
         $(".work-button").click(function(){
 

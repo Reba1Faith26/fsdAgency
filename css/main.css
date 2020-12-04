@@ -2,7 +2,9 @@
 .computer-li{
     margin-left:20px;
 }
-
+.about-card{
+    margin-top:20px;
+}
 .phone-navigation-list{
     position:absolute;
     top:70px;
@@ -35,11 +37,32 @@
     .multimedia-caption{
         margin-left : -2000px;
     }
+    .different-wrapper{
+        margin-right:-1700px;
+    }
 }
 
 @media screen and (min-width:769px) and (max-width:1500px){
     .card{
-        height:270px;
+        height:236px;
+    }
+    .different-card{
+       height:360px;
+    }
+    .contact-card{
+        height:170px;
+    }
+    .contact-font{
+        font-size:15px !important;
+    }
+}
+@media screen and (min-width:769px) and (max-width:1500px){
+    .about-card{
+        height:100px;
+        margin-top:10px;
+    }
+    .different-card{
+        height:360px;
     }
 }
 .services-wrapper,.button-wrapper-two{
@@ -49,6 +72,10 @@
 }
 .services-li{
     list-style:none;
+}
+.different-wrapper{
+    background-color:#FAFAFA;
+    margin-right:-1700px;
 }
 /* coding for the landing page ended here*/
 
