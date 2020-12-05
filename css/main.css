@@ -44,7 +44,7 @@
 
 @media screen and (min-width:769px) and (max-width:1500px){
     .card{
-        height:236px;
+        height:260px;
     }
     .different-card{
        height:360px;
@@ -54,6 +54,11 @@
     }
     .contact-font{
         font-size:15px !important;
+    }
+}
+@media screen and (min-width:769px) and (max-width:1000px){
+    .card{
+        height:279px;
     }
 }
 @media screen and (min-width:769px) and (max-width:1500px){
