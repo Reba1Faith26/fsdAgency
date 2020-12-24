@@ -1,134 +1,24 @@
-function landing(){
-    //coding for the menu button
-    $(".menu-button").click(function(){
-        $(".phone-navigation-list").slideToggle(500);
-    })
-    //coding for the meu button ended here
-
-
-    $(".landing-page").slideDown(300,function(){
-        
-        $(".welcome-caption").animate(
-            {
-                marginTop : '45px'
-            }
-        ,500);
-
-
-        $(".phones-navigation-bar").animate(
-            {
-                marginTop : '0px'
-            }
-        ,500);
-
-        $(".computer-navigation-bar").animate(
-            {
-                marginTop : '10px'
-            }
-        ,500);
-
-        $(".multimedia-caption").animate({
-            marginLeft : '0px'
-        },1700)
-
-        $(".services-wrapper").animate({
-            marginRight : '0px'
-        },1700)
-
-        $(".button-wrapper-one").animate({
-            marginLeft : '0px'
-        },1700)
-
-        $(".button-wrapper-two").animate({
-            marginRight : '0px'
-        },1700)
-
-        $(".different-wrapper").animate({
-            marginLeft : '0px'
-        },1700)
-        //happens when the services button is basically clicked
-        $(".work-button").click(function(){
-
-            $(".welcome-caption").animate(
-                {
-                    marginLeft : '-600px'
-                }
-            ,700,function(){
-                $(".welcome-caption").fadeIn(function(){
-                    var welcome = document.getElementsByClassName("welcome-caption");
-                    welcome[0].innerText = "Our Portfolio";
-                    welcome[0].style.color = "white";
-                });
-
-                $(".welcome-caption").animate({
-                    marginLeft : '0px'
-                },1300)
-
-            });
-            
-            $(".multimedia-caption").animate({
-                marginLeft : '-600px'
-            },900)
-            
-            $(".services-wrapper").animate({
-                marginLeft : '-600px'
-            },1200);
-
-            $(".button-wrapper-one").animate({
-                marginLeft : '-400px'
-            },1200)
-
-            $(".button-wrapper-two").animate({
-                marginLeft : '-600px'
-            },1200)
-
-            
-            $(".portfolio-wrapper").animate({
-                marginTop : '-130px'
-            },1400,function(){
-                $(".portfolio-wrapper").animate({
-                    marginLeft : '0px'
-                },1000)
-            });
-
-        })
-
+function menuBtn(){
+    $(document).ready(function(){
+        $('.fa-bars').click(function(){
+            $('.phone-navigation-list').slideToggle();
+        });
     });
-    //back button coding start here 
-    $(".home-btn").click(function(){
-        $(".portfolio-wrapper").animate({
-            marginLeft : '-600px'
-        },700)
-        
-        $(".welcome-caption").animate({
-            marginLeft : '-600px'
-        },1700)
-
-        //coding for the home page when  the back button is clicked start here
-        var welcomeCaption = document.getElementsByClassName("welcome-caption");
-        welcomeCaption[0].innerText = "Welcome To \n Faith Seasons Designs";
-        $(".welcome-caption").animate(
-            {
-                marginLeft : '0px'
-            }
-        );
-
-
-        $(".multimedia-caption").animate({
-            marginLeft : '0px'
-        },2000)
-
-        $(".services-wrapper").animate({
-            marginLeft : "0px"
-        },2000)
-
-        $(".button-wrapper-one").animate({
-            marginLeft : '0px'
-        },1700)
-
-        $(".button-wrapper-two").animate({
-            marginLeft : '0px'
-        },1700)
-        //coding for the home page when the back button is clicked ended here
+}
+function smDevicesButton(){
+    $(document).ready(function(){
+        $(".phone-li").click(function(){
+            $(".phone-navigation-list").hide(300);
+        })
     })
 }
+function aboutButton(){
+    $(document).ready(function(){
+        $('#com-about-button').click(function(){
+            alert("testing this button");
+        });
+    })
+}
+menuBtn();
+smDevicesButton();
+aboutButton();

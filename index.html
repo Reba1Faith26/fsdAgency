@@ -12,11 +12,12 @@
     <link rel="stylesheet" href="css/mdb.min.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/all.min.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
   </head>
   <body>
     
 
-    <div class="d-block d-sm-block d-md-none d-lg-none d-xl-none">
+    <div class="d-block d-sm-block d-md-none d-lg-none d-xl-none" id="top">
       <div class="container-fluid bg-primary d-flex align-items-center justify-content-end" style="height:50px">
         <div class="container d-flex justify-content-end">
           <i class="fas fa-bars text-white" style="font-size:25px"></i>
@@ -24,28 +25,28 @@
       </div>
     </div>
 
-    <div class="d-none d-sm-none d-md-block">
-      <div class="container-fluid bg-primary d-flex align-items-center justify-content-center" style="height:60px">
+    <div class="container-fluid d-none d-sm-none d-md-block bg-primary">
+      <div class="container bg-primary d-flex align-items-center justify-content-end" style="height:60px">
         <li class="computer-li d-block">
-          <a href="#" class="text-white font-weight-bold h5">
+          <a href="index.html" class="text-white font-weight-bold h6">
             <i class="fas fa-home"></i> &nbsp;
             Home
           </a>
         </li>
         <li class="computer-li d-block">
-          <a href="#" class="text-white font-weight-bold h5">
+          <a href="#aboutCol" class="text-white font-weight-bold h6">
             <i class="fas fa-info"></i> &nbsp;
             About Us
           </a>
         </li>
         <li class="computer-li d-block">
-          <a href="#" class="text-white font-weight-bold h5">
+          <a href="#contactCol" class="text-white font-weight-bold h6">
             <i class="fas fa-phone-alt"></i> &nbsp;
             Contact Us
           </a>
         </li>
         <li class="computer-li d-block">
-          <a href="#" class="text-white font-weight-bold h5">
+          <a href="#" class="text-white font-weight-bold h6">
             <i class="fas fa-laptop-code text-white"></i> &nbsp;
             Portolio
           </a>
@@ -57,7 +58,7 @@
       <img src="img/3.jpeg" style="width:100%;" alt="" class="img-fluid mx-auto my-image">
       
       <div class="mask d-flex align-items-center">
-        
+        <!--coding for the sm devices start here for this ection of bg-->
         <div class="container text-center d-md-none">
 
           <p class="h5 text-white font-weight-bold">
@@ -70,38 +71,40 @@
             Social Media Marketing
           </p><br>
           <p class="h6 text-white font-weight-bold">
-             <i>
               here to give your brand or business an identity,recognition and 
               make sure it prosper
-             </i>
           </p>
 
           <p class="btn btn-xm btn-outline-primary text-white font-weight-bold">
-            <i class="fas fa-info"></i> &nbsp;
-            About Us
+            <a href="#aboutCol" class="text-white font-weight-bold">
+              <i class="fas fa-info"></i> &nbsp;
+              About Us
+            </a>
           </p>
-          <p class="btn btn-xm btn-outline-primary text-white font-weight-bold">
-            <i class="fas fa-laptop-code text-white"></i> &nbsp;
+          <p class="btn btn-xm btn-outline-primary text-white font-weight-bold port-button" id="portfolio-button">
+            <a href="#portfolioCol" class="text-white font-weight-bold">
+              <i class="fas fa-laptop-code text-white"></i> &nbsp;
             Portolio
+            </a>
           </p>
 
         </div>
-        
+        <!--coding for sm devices ended here for this section-->
         <div class="container text-center d-none d-sm-none d-md-block">
           <p class="h1 text-white">
             Web Development | Graphic Design | Social Media Marketing
           </p><br>
           <p class="h5 text-white font-weight-bold">
-            <i>
               here to give your brand or business an identity,recognition and 
               make sure it prosper
-            </i>
           </p> <br>
-          <p class="btn btn-lg btn-outline-primary text-white font-weight-bold">
-            <i class="fas fa-info"></i> &nbsp;
-            About Us
+          <p class="btn btn-lg btn-outline-primary text-white font-weight-bold" id="about-button">
+            <a href="#aboutCol" class="font-weight-bold text-white">
+              <i class="fas fa-info"></i> &nbsp;
+              About Us
+            </a>
           </p>
-          <p class="btn btn-lg btn-outline-primary text-white font-weight-bold">
+          <p class="btn btn-lg btn-outline-primary text-white font-weight-bold" id="about-button">
             <i class="fas fa-laptop-code text-white"></i> &nbsp;
             Portolio
           </p>
@@ -115,8 +118,9 @@
   <!--coding for the services start here -->
     <div class="container-fluid d-flex justify-content-center services">
       <div class="row">
+        <p id="aboutCol"></p>
         <div class="col-12">
-          <p class="h1 text-center font-weight-bold" style="color:black !important">
+          <p class="h1 text-center font-weight-bold" href="about" style="color:black !important;">
             <i class="fas fa-info-circle"></i>
             About Us 
           </p>
@@ -136,15 +140,17 @@
                 your brand. We are simply here to give your business
                 an identity by providing it with services like graphic design, 
                 marketing and web development 
+            </p><br>
+            <p id="servicesCol"></p>
+            <p class="h1 text-center font-weight-bold" style="color:black !important">
+              <i class="fas fa-users-cog"></i>
+              Our Services
             </p>
           </div>
           <br>
-          <p class="h1 text-center font-weight-bold" style="color:black !important">
-            <i class="fas fa-users-cog"></i>
-            Our Services
-          </p>
         </div>
         <div class="col-12 col-sm-12 col-md-4">
+          
           <div class="card text-center" style="border-bottom:solid 10px pink">
             <div class="card-body">
               <i class="fas fa-2x fa-laptop-code"></i><br>
@@ -184,7 +190,7 @@
           </div>
         </div>
         <!--added code for the professional -->
-        <div class="col-12">
+        <div class="col-12" id="professionCol">
           <br>
           <p class="h1 text-center font-weight-bold" style="color:black !important">
             Our Professional Journey
@@ -249,6 +255,15 @@
             </p>
           </div>
         </div>
+        
+        <div class="col-12 col-sm-12 col-md-12 text-center" id="contactCol" style="margin-top:20px;">
+          <p class="h1 font-weight-bold" style="color:black;">
+            Contact Us
+          </p>
+          <p class="h6 font-weight-bold">
+            074 044 0045
+          </p>
+        </div>
       </div>
     </div>
   <!--coding for the services ended here-->
@@ -265,8 +280,73 @@
       </div>
     </footer>
   <!--footer coding ended here-->
+    <br>
+
+    <!--footer menu coding start here-->
+    <div class="container-fluid bg-primary  footer-buttons-wrapper">
+      <div class="container d-flex justify-content-center align-items-center bg-primary footer-buttons-wrapper">
+        <li class="d-inline-block" id="footer-buttons">
+          <a href="#" class="font-weight-bold text-white">
+            <i class="fas fa-home"></i> &nbsp;
+          </a>
+        </li>
+        <li class="d-inline-block" id="footer-buttons">
+          <a href="#aboutCol" class="font-weight-bold text-white">
+            <i class="fas fa-info"></i> &nbsp;
+          </a>
+        </li>
+        <li class="d-inline-block" id="footer-buttons">
+          <a href="#servicesCol" class="font-weight-bolder text-white">
+            <i class="fas fa-users-cog"></i>
+          </a>
+        </li>
+        <li class="d-inline-block" id="footer-buttons">
+          <a href="#" class="font-weight-bold text-white">
+            <i class="fas fa-laptop-code text-white"></i> &nbsp;
+          </a>
+        </li>
+        <li class="d-inline-block" id="footer-buttons">
+          <a href="#contactCol" class="font-weight-bold text-white">
+            <i class="fas fa-phone-alt"></i> &nbsp;
+          </a>
+        </li>
+      </div>
+    </div>
+    <!--footer menu coding ended here-->
+  <!--menu for the small devices drop down menu coding start here-->
+    <div class="d-md-none phone-navigation-list bg-primary">
+      <div class="container-fluid bg-primary text-white text-center">
+        <br>
+        <li class="phone-li d-block">
+          <a href="index.html" class="font-weight-bold h5 text-white">
+            Home
+          </a>
+        </li>
+        <li class="phone-li d-block" id="about-button">
+          <a href="#aboutCol" class="font-weight-bold h5 text-white">
+            About Us
+          </a>
+        </li>
+        <li class="phone-li d-block" id="contact-button">
+          <a href="#contactCol" class="font-weight-bold h5 text-white">
+            Contact Us
+          </a>
+        </li>
+        <li class="phone-li d-block" id="portfolio-button">
+          <a href="#portolioCol" class="font-weight-bold h5 text-white">
+            Portolio
+          </a>
+        </li>
+        <li class="phone-li d-block" id="services-button">
+          <a href="#servicesCol" class="font-weight-bold h5 text-white">
+            Services
+          </a>
+        </li>
+      </div>
+    </div>
+  <!--menu for the small devices drop down menu coding ended here-->
   </body>
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Custom scripts -->
-  <script type="text/javascript"></script>
+  <script src="js/main.js"></script>
 </html>

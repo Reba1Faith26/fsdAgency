@@ -1,36 +1,62 @@
-.computer-li{
-    margin-left:50px;
-}
-/*coding for background-image start here*/
-.mask{
-    background-color:rgb(20 18 18 / 90%);
-}
-@media screen and (min-width:1140px) and (max-width:2000px){
- .my-image{
-     margin-top:-120px;
- }   
-}
-/*coding for background-image-end here*/
-@media screen and (min-width:100px) and (max-width:400px){
-    .my-image{
-        height:320px;
-        margin-top:0px;
-    }
-}
-
 body{
-    background-color:#F5F5F5;
+    background-color:#EEEEEE !important;
 }
+/*coding for the navigation bar start here*/
+.computer-navigation-bar{
+    height:60px;
+}
+.computer-li{
+    margin-left:40px;
+}
+/*coding for the navigation bar ended here*/
+
+/*coding for the background image wrapper start here*/
+.bg-image{
+    height:600px !important;
+    background:url("../images/1.jpg") no-repeat center center;
+    background-size: cover;
+    background-position-y:-50px !important;
+}
+.mask{
+    background-color:rgb(29 24 24 / 90%);
+}
+
 .card{
-    margin-top:20px;
-    border-bottom:solid 10px #011f4c !important;
+    border-bottom:solid 10px #040437 !important;
 }
 
-
-/*media queries coding start here*/
-@media screen and (min-width:760px) and (max-width:1110px){
-    #card-text{
-        font-size:16px !important;
+/*coding for the background image wrapper ended here*/
+@media screen and (min-width:0px) and (max-width:440px){
+    .bg-image,.my-image{
+        height:300px !important;
     }
 }
-/*media queries coding ended here*/
+
+.phone-li{
+    margin-top:20px;
+}
+.phone-navigation-list{
+    height:300px;
+    position:absolute;
+    left:0;
+    right:0;
+    top:50px;
+    display:none;
+}
+
+#footer-buttons{
+    margin-left:20px;
+}
+.footer-buttons-wrapper{
+    position:fixed;
+    left:0;
+    right:0;
+    bottom:0px;
+    height:40px;
+}
+
+@media screen and (min-width:769px) and (max-width:1083px){
+    .card{
+        height:200px ;
+    }
+}
